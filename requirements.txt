@@ -1,0 +1,8 @@
+# ML-Based Password Strength Analyzer
+# No external dependencies required - uses only Python standard library
+# 
+# Optional dependencies for enhanced functionality:
+numpy>=1.21.0          # For advanced mathematical operations
+scikit-learn>=1.0.0    # For potential ML model integration
+matplotlib>=3.5.0      # For visualization capabilities
+pandas>=1.3.0          # For data analysis features
