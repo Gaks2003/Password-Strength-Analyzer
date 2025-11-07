@@ -39,12 +39,12 @@
   },
   "homepage": "https://your-username.github.io/password-strength-analyzer",
   "devDependencies": {
+    "eslint": "^8.57.0",
     "gh-pages": "^6.0.0",
-    "serve": "^14.2.1",
     "htmlhint": "^1.1.4",
+    "serve": "^14.2.1",
     "stylelint": "^15.11.0",
-    "stylelint-config-standard": "^34.0.0",
-    "eslint": "^8.57.0"
+    "stylelint-config-standard": "^34.0.0"
   },
   "engines": {
     "node": ">=14.0.0"
