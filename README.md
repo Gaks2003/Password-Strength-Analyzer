@@ -23,7 +23,7 @@ A sophisticated web-based password strength analyzer that uses advanced algorith
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-username.github.io/password-strength-analyzer)
+[View Live Demo](https://Gaks2003.github.io/password-strength-analyzer)
 
 ## 📊 Analysis Features
 
