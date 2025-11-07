@@ -429,9 +429,23 @@ body {
     border: 1px solid;
 }
 
-.severity-high { background: #300; color: #f00; border-color: #f00; }
-.severity-medium { background: #320; color: #fa0; border-color: #fa0; }
-.severity-low { background: #030; color: #0f0; border-color: #0f0; }
+.severity-high {
+    background: #300;
+    color: #f00;
+    border-color: #f00;
+}
+
+.severity-medium {
+    background: #320;
+    color: #fa0;
+    border-color: #fa0;
+}
+
+.severity-low {
+    background: #030;
+    color: #0f0;
+    border-color: #0f0;
+}
 
 .detailed-analysis {
     transition: all 0.3s ease;
