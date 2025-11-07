@@ -6,8 +6,8 @@
 
 body {
     background-color: #0f0f0f;
-    background-image: radial-gradient(circle at center, #0f0f0f 0%, #000000 100%);
-    color: #00ff00;
+    background-image: radial-gradient(circle at center, #0f0f0f 0%, #000 100%);
+    color: #0f0;
     font-family: 'Courier New', monospace;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,14 +39,14 @@ body {
 .header {
     text-align: center;
     margin-bottom: 40px;
-    color: #00ff00;
+    color: #0f0;
 }
 
 .header h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
-    text-shadow: 0 0 10px #00ff00;
-    color: #00ff00;
+    text-shadow: 0 0 10px #0f0;
+    color: #0f0;
 }
 
 .header h1 i {
@@ -60,11 +60,11 @@ body {
 }
 
 .main-content {
-    background: rgba(0, 0, 0, 0.8);
-    border: 1px solid #00ff00;
+    background: rgb(0 0 0 / 80%);
+    border: 1px solid #0f0;
     border-radius: 8px;
     padding: 40px;
-    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+    box-shadow: 0 0 20px rgb(0 255 0 / 30%);
 }
 
 .input-section {
@@ -76,26 +76,26 @@ body {
     margin-bottom: 20px;
 }
 
-#passwordInput {
+#password-input {
     width: 100%;
     padding: 15px 50px 15px 20px;
     font-size: 1.1rem;
-    border: 1px solid #00ff00;
+    border: 1px solid #0f0;
     border-radius: 4px;
     outline: none;
     transition: all 0.3s ease;
-    background: #000000;
-    color: #00ff00;
+    background: #000;
+    color: #0f0;
     font-family: 'Courier New', monospace;
 }
 
-#passwordInput:focus {
+#password-input:focus {
     border-color: #00ff41;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 10px rgb(0 255 0 / 50%);
 }
 
-#passwordInput::placeholder {
-    color: #006600;
+#password-input::placeholder {
+    color: #060;
 }
 
 .toggle-btn {
@@ -105,7 +105,7 @@ body {
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: #00ff00;
+    color: #0f0;
     cursor: pointer;
     font-size: 1.2rem;
     transition: all 0.3s ease;
@@ -113,7 +113,7 @@ body {
 
 .toggle-btn:hover {
     color: #00ff41;
-    text-shadow: 0 0 5px #00ff00;
+    text-shadow: 0 0 5px #0f0;
 }
 
 .options {
@@ -125,7 +125,7 @@ body {
     align-items: center;
     cursor: pointer;
     font-size: 1rem;
-    color: #00ff00;
+    color: #0f0;
 }
 
 .checkbox-label input[type="checkbox"] {
@@ -135,15 +135,15 @@ body {
 .checkmark {
     width: 20px;
     height: 20px;
-    border: 1px solid #00ff00;
+    border: 1px solid #0f0;
     border-radius: 2px;
     margin-right: 10px;
     position: relative;
-    background: #000000;
+    background: #000;
 }
 
 .checkbox-label input[type="checkbox"]:checked + .checkmark {
-    background: #00ff00;
+    background: #0f0;
 }
 
 .checkbox-label input[type="checkbox"]:checked + .checkmark::after {
@@ -151,7 +151,7 @@ body {
     position: absolute;
     top: -2px;
     left: 3px;
-    color: #000000;
+    color: #000;
     font-size: 14px;
     font-weight: bold;
 }
@@ -164,7 +164,7 @@ body {
 
 .btn {
     padding: 12px 24px;
-    border: 1px solid #00ff00;
+    border: 1px solid #0f0;
     border-radius: 4px;
     font-size: 1rem;
     font-weight: bold;
@@ -174,14 +174,14 @@ body {
     align-items: center;
     gap: 8px;
     font-family: 'Courier New', monospace;
-    background: #000000;
-    color: #00ff00;
+    background: #000;
+    color: #0f0;
 }
 
 .btn:hover {
-    background: #00ff00;
-    color: #000000;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    background: #0f0;
+    color: #000;
+    box-shadow: 0 0 10px rgb(0 255 0 / 50%);
 }
 
 .btn-primary {
@@ -195,8 +195,8 @@ body {
 }
 
 .btn-outline {
-    border-color: #008800;
-    color: #008800;
+    border-color: #080;
+    color: #080;
 }
 
 .score-display {
@@ -206,8 +206,8 @@ body {
     gap: 40px;
     margin-bottom: 40px;
     padding: 30px;
-    background: rgba(0, 0, 0, 0.6);
-    border: 1px solid #00ff00;
+    background: rgb(0 0 0 / 60%);
+    border: 1px solid #0f0;
     border-radius: 8px;
 }
 
@@ -215,7 +215,7 @@ body {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background: conic-gradient(from 0deg, #ff0000 0%, #ff8800 25%, #ffff00 50%, #00ff00 75%, #0088ff 100%);
+    background: conic-gradient(from 0deg, #f00 0%, #f80 25%, #ff0 50%, #0f0 75%, #08f 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -228,22 +228,22 @@ body {
     position: absolute;
     width: 90px;
     height: 90px;
-    background: #000000;
+    background: #000;
     border-radius: 50%;
-    border: 1px solid #00ff00;
+    border: 1px solid #0f0;
 }
 
 .score-value {
     font-size: 2rem;
     font-weight: bold;
-    color: #00ff00;
+    color: #0f0;
     z-index: 1;
-    text-shadow: 0 0 5px #00ff00;
+    text-shadow: 0 0 5px #0f0;
 }
 
 .score-label {
     font-size: 0.9rem;
-    color: #00cc00;
+    color: #ee3f0a;
     z-index: 1;
 }
 
@@ -253,8 +253,8 @@ body {
 
 .strength-bar {
     height: 20px;
-    background: #001100;
-    border: 1px solid #00ff00;
+    background: #010;
+    border: 1px solid #0f0;
     border-radius: 4px;
     overflow: hidden;
     margin-bottom: 10px;
@@ -275,8 +275,8 @@ body {
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
-    color: #00ff00;
-    text-shadow: 0 0 5px #00ff00;
+    color: #0f0;
+    text-shadow: 0 0 5px #0f0;
 }
 
 .analysis-grid {
@@ -287,20 +287,20 @@ body {
 }
 
 .analysis-card {
-    background: rgba(0, 0, 0, 0.8);
-    border: 1px solid #00ff00;
+    background: rgb(0 0 0 / 80%);
+    border: 1px solid #0f0;
     padding: 25px;
     border-radius: 8px;
     border-left: 4px solid #00ff41;
 }
 
 .analysis-card h3 {
-    color: #00ff00;
+    color: #0f0;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
     gap: 10px;
-    text-shadow: 0 0 5px #00ff00;
+    text-shadow: 0 0 5px #0f0;
 }
 
 .analysis-card h3 i {
@@ -308,20 +308,20 @@ body {
 }
 
 .recommendations {
-    background: rgba(0, 0, 0, 0.8);
-    border: 1px solid #00ff00;
+    background: rgb(0 0 0 / 80%);
+    border: 1px solid #0f0;
     padding: 25px;
     border-radius: 8px;
     margin-bottom: 30px;
 }
 
 .recommendations h3 {
-    color: #00ff00;
+    color: #0f0;
     margin-bottom: 15px;
     display: flex;
     align-items: center;
     gap: 10px;
-    text-shadow: 0 0 5px #00ff00;
+    text-shadow: 0 0 5px #0f0;
 }
 
 .recommendations h3 i {
@@ -334,10 +334,10 @@ body {
 
 .recommendations li {
     padding: 8px 0;
-    border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+    border-bottom: 1px solid rgb(0 255 0 / 20%);
     position: relative;
     padding-left: 25px;
-    color: #00ff00;
+    color: #0f0;
 }
 
 .recommendations li::before {
@@ -358,20 +358,20 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgb(0 0 0 / 90%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    color: #00ff00;
+    color: #0f0;
 }
 
 .spinner {
     width: 50px;
     height: 50px;
-    border: 4px solid rgba(0, 255, 0, 0.3);
-    border-top: 4px solid #00ff00;
+    border: 4px solid rgb(0 255 0 / 30%);
+    border-top: 4px solid #0f0;
     border-radius: 50%;
     animation: spin 1s linear infinite;
     margin-bottom: 20px;
@@ -387,7 +387,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 8px 0;
-    border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+    border-bottom: 1px solid rgb(0 255 0 / 20%);
 }
 
 .metric-label {
@@ -395,7 +395,7 @@ body {
 }
 
 .metric-value {
-    color: #00ff00;
+    color: #0f0;
     font-weight: bold;
 }
 
@@ -404,7 +404,7 @@ body {
     align-items: center;
     gap: 10px;
     padding: 5px 0;
-    color: #00ff00;
+    color: #0f0;
 }
 
 .pattern-icon {
@@ -417,7 +417,7 @@ body {
     align-items: flex-start;
     gap: 10px;
     padding: 8px 0;
-    border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+    border-bottom: 1px solid rgb(0 255 0 / 20%);
 }
 
 .issue-severity {
@@ -429,19 +429,19 @@ body {
     border: 1px solid;
 }
 
-.severity-high { background: #330000; color: #ff0000; border-color: #ff0000; }
-.severity-medium { background: #332200; color: #ffaa00; border-color: #ffaa00; }
-.severity-low { background: #003300; color: #00ff00; border-color: #00ff00; }
+.severity-high { background: #300; color: #f00; border-color: #f00; }
+.severity-medium { background: #320; color: #fa0; border-color: #fa0; }
+.severity-low { background: #030; color: #0f0; border-color: #0f0; }
 
 .detailed-analysis {
     transition: all 0.3s ease;
 }
 
-#resultsSection {
+#results-section {
     display: none;
 }
 
-#loadingSpinner {
+#loading-spinner {
     display: none;
 }
 

@@ -16,15 +16,15 @@ class PasswordAnalyzer {
     }
 
     initializeElements() {
-        this.passwordInput = document.getElementById('passwordInput');
-        this.togglePassword = document.getElementById('togglePassword');
-        this.breachCheck = document.getElementById('breachCheck');
-        this.analyzeBtn = document.getElementById('analyzeBtn');
-        this.generateBtn = document.getElementById('generateBtn');
-        this.passphraseBtn = document.getElementById('passphraseBtn');
-        this.resultsSection = document.getElementById('resultsSection');
-        this.loadingSpinner = document.getElementById('loadingSpinner');
-        this.exportBtn = document.getElementById('exportBtn');
+        this.passwordInput = document.getElementById('password-input');
+        this.togglePassword = document.getElementById('toggle-password');
+        this.breachCheck = document.getElementById('breach-check');
+        this.analyzeBtn = document.getElementById('analyze-btn');
+        this.generateBtn = document.getElementById('generate-btn');
+        this.passphraseBtn = document.getElementById('passphrase-btn');
+        this.resultsSection = document.getElementById('results-section');
+        this.loadingSpinner = document.getElementById('loading-spinner');
+        this.exportBtn = document.getElementById('export-btn');
     }
 
     bindEvents() {
@@ -334,17 +334,17 @@ class PasswordAnalyzer {
 
     displayResults(analysis, password) {
         // Update score display
-        document.getElementById('scoreValue').textContent = analysis.score;
-        document.getElementById('strengthText').textContent = analysis.strength.level;
-        document.getElementById('strengthText').style.color = analysis.strength.color;
+        document.getElementById('score-value').textContent = analysis.score;
+        document.getElementById('strength-text').textContent = analysis.strength.level;
+        document.getElementById('strength-text').style.color = analysis.strength.color;
         
         // Update strength bar
-        const strengthBar = document.getElementById('strengthBar');
+        const strengthBar = document.getElementById('strength-bar');
         strengthBar.style.setProperty('--width', `${analysis.score}%`);
         strengthBar.style.background = `linear-gradient(90deg, ${analysis.strength.color} ${analysis.score}%, #e9ecef ${analysis.score}%)`;
         
         // Show/hide detailed analysis based on breach check setting
-        const detailedAnalysis = document.getElementById('detailedAnalysis');
+        const detailedAnalysis = document.getElementById('detailed-analysis');
         if (this.breachCheck.checked) {
             // Update detailed analysis
             this.updateEntropyDetails(analysis.entropy, password);
@@ -366,7 +366,7 @@ class PasswordAnalyzer {
     }
 
     updateEntropyDetails(entropy, password) {
-        const container = document.getElementById('entropyDetails');
+        const container = document.getElementById('entropy-details');
         container.innerHTML = `
             <div class="metric-item">
                 <span class="metric-label">Shannon Entropy:</span>
@@ -392,7 +392,7 @@ class PasswordAnalyzer {
     }
 
     updatePatternDetails(patterns) {
-        const container = document.getElementById('patternDetails');
+        const container = document.getElementById('pattern-details');
         const patternList = [
             { key: 'keyboard', label: 'Keyboard Patterns', icon: '⌨️' },
             { key: 'repeated', label: 'Repeated Characters', icon: '🔄' },
@@ -417,7 +417,7 @@ class PasswordAnalyzer {
     }
 
     updateCrackTimeDetails(crackTimes) {
-        const container = document.getElementById('crackTimeDetails');
+        const container = document.getElementById('crack-time-details');
         container.innerHTML = `
             <div class="metric-item">
                 <span class="metric-label">Online Attack:</span>
@@ -435,7 +435,7 @@ class PasswordAnalyzer {
     }
 
     updateSecurityIssues(issues) {
-        const container = document.getElementById('securityIssues');
+        const container = document.getElementById('security-issues');
         
         if (issues.length === 0) {
             container.innerHTML = '<div style="color: #2ed573; text-align: center; padding: 20px;">✅ No security issues detected!</div>';
@@ -453,7 +453,7 @@ class PasswordAnalyzer {
     }
 
     updateRecommendations(recommendations) {
-        const container = document.getElementById('recommendationsList');
+        const container = document.getElementById('recommendations-list');
         const html = recommendations.map(rec => `<li>${rec}</li>`).join('');
         container.innerHTML = html;
     }
