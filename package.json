@@ -1,0 +1,42 @@
+{
+  "name": "password-strength-analyzer",
+  "version": "1.0.0",
+  "description": "A sophisticated web-based password strength analyzer with advanced security assessment",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve . --listen 3000",
+    "build": "echo 'No build step required for static site'",
+    "deploy": "gh-pages -d .",
+    "test": "echo 'No tests specified'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/password-strength-analyzer.git"
+  },
+  "keywords": [
+    "password",
+    "security",
+    "analyzer",
+    "strength",
+    "entropy",
+    "cybersecurity",
+    "web-app",
+    "javascript",
+    "html5",
+    "css3"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/your-username/password-strength-analyzer/issues"
+  },
+  "homepage": "https://your-username.github.io/password-strength-analyzer",
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "serve": "^14.2.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
